@@ -52,6 +52,16 @@ void activateGreen() {
   
   digitalWrite(green, LOW);
   digitalWrite(r, LOW);
+  activateYellow2();
+}
+
+void activateYellow2() {
+  digitalWrite(yellow, HIGH);
+  digitalWrite(y, HIGH);
+  delay(1000); 
+  
+  digitalWrite(yellow, LOW);
+  digitalWrite(y, LOW);
   activateRed();
 }
 
